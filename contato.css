@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@font-face{
+    font-family: 'silvas';
+    src: url('../fonts/Acumin-Variable-Concept.ttf');
+}
+.contato h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    font-weight: 300;
+    color: black;
+    font-weight: 500;
+    font-family: 'silvas';
+    
+}
+
+
+
+.text-center {
+    color: rgb(34, 31, 31);
+}
+#form6Example1 {
+   background-color: rgb(245, 238, 238);
+   border: solid 1px rgb(182, 179, 179);
+}
+#form6Example1:hover{
+    background-color: aliceblue;
+}
+#form6Example2 {
+    background-color: rgb(245, 238, 238);
+    border: solid 1px rgb(182, 179, 179);
+}
+#form6Example2:hover{
+    background-color: aliceblue;
+}
+#form6Example3 {
+    background-color: rgb(245, 238, 238);
+    border: solid 1px rgb(182, 179, 179);
+}
+#form6Example3:hover{
+    background-color: aliceblue;
+}
+#form6Example4{
+    background-color: rgb(245, 238, 238);
+    border: solid 1px rgb(182, 179, 179);
+}
+#form6Example4:hover{
+    background-color: aliceblue;
+}
+#form6Example5{
+    background-color: rgb(245, 238, 238);
+    border: solid 1px rgb(182, 179, 179);
+}
+#form6Example5:hover{
+    background-color: aliceblue;
+}
+#form6Example6{
+    background-color: rgb(245, 238, 238);
+    border: solid 1px rgb(182, 179, 179);
+}
+#form6Example6:hover{
+    background-color: aliceblue;
+}
+#form6Example7{
+    background-color: rgb(245, 238, 238);
+    border: solid 1px rgb(182, 179, 179);
+}
+#form6Example7:hover{
+    background-color: aliceblue;
+}
+#formulario {
+   width: 50%;
+}
+
+
+
