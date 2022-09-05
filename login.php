@@ -34,6 +34,9 @@ session_start();
 		padding:40px;
 		background-color:#ef4b3f;
 	}
+	body{
+
+	}
 
 	.container{
 		
