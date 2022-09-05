@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $assunto = $_POST['assunto'];
     $mensagem = $_POST['mensagem'];
 
-    $result = mysqli_query($conexao, "INSERT INTO usuarios (nome,apelido,endereco,email,telefone,assunto,mensagem)  VALUES ('$nome','$apelido','$endereco','$email','$telefone','$assunto','$mensagem') ");
+    $result = mysqli_query($conexao, "INSERT INTO usuarios123 (nome,apelido,endereco,email,telefone,assunto,mensagem)  VALUES ('$nome','$apelido','$endereco','$email','$telefone','$assunto','$mensagem') ");
 
     header('location: contato.html');
 }
