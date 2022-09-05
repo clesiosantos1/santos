@@ -242,3 +242,12 @@ transition: 1s;
 #ccc{
     width: 150px;
 }
+
+
+.velho{
+    background-image: url(img/Banner\ para\ site\ dia\ dos\ pais\ verde\ e\ preto.png);
+    min-height: 30em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
