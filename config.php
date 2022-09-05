@@ -3,8 +3,8 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "";
-$dbname = "formulario_dados";
+$dbname = "lar-caridade";
 
-$conexao = new PDO($servidor,$usuario,$senha,$dbname);
+$conexao = mysqli_connect($servidor,$usuario,$senha,$dbname);
 
 ?>

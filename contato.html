@@ -20,6 +20,7 @@
         <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
         <li><a href=""><ion-icon name="logo-google"></ion-icon></a></li>
         <li><a href=""><ion-icon name="logo-youtube"></ion-icon></a></li>
+       <li><a href=""><ion-icon name="enter-outline"></ion-icon></a></li>
     </ul>
 </div>
 <!--menu-->
@@ -104,18 +105,18 @@
 </div>
 <hr>
           <!--formulario-->
-          <form class="container" id="formulario">
+          <form class="container" action="processa.php" method="POST" id="formulario">  
             <!-- 2 column grid layout with text inputs for the first and last names -->
             <div class="row mb-4">
               <div class="col">
                 <div class="form-outline">
-                  <input type="text" id="form6Example1" class="form-control" placeholder="Nome Completo:" />
+                  <input type="text" id="form6Example1" name="nome" class="form-control" placeholder="Nome Completo:" required />
                   <label class="form-label" for="form6Example1"></label>
                 </div>
               </div>
               <div class="col">
                 <div class="form-outline">
-                  <input type="text" id="form6Example2" id="form-c"  class="form-control" placeholder="Apelido" />
+                  <input type="text" id="form6Example2" id="form-c" name="apelido"  class="form-control" placeholder="Apelido" />
                   <label class="form-label" for="form6Example2"></label>
                 </div>
               </div>
@@ -123,58 +124,40 @@
           
             <!-- Text input -->
             <div class="form-outline mb-4">
-              <input type="text" id="form6Example3" class="form-control" placeholder="Endereço:" />
+              <input type="text" id="form6Example3" class="form-control" name="endereco" placeholder="Endereço:" required />
               <label class="form-label" for="form6Example3"></label>
             </div>
           
             <!-- Text input -->
             <div class="form-outline mb-4">
-              <input type="text" id="form6Example4" class="form-control" placeholder="Email:" />
+              <input type="email" id="form6Example4" name="email" class="form-control" placeholder="Email:" required />
               <label class="form-label" for="form6Example4"></label>
             </div>
           
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" id="form6Example5" class="form-control" placeholder="Telefone:" />
+              <input type="number" id="form6Example5" name="telefone" class="form-control" placeholder="Telefone:" required />
               <label class="form-label" for="form6Example5"></label>
             </div>
           
             <!-- Number input -->
             <div class="form-outline mb-4">
-              <input type="number" id="form6Example6" class="form-control" placeholder="Assunto:" />
+              <input type="text" id="form6Example6" name="assunto" class="form-control" placeholder="Assunto:" />
               <label class="form-label" for="form6Example6"></label>
             </div>
           
             <!-- Message input -->
             <div class="form-outline mb-4">
-              <textarea class="form-control" id="form6Example7" rows="6" placeholder="Mensagem:"></textarea>
+              <textarea class="form-control" name="mensagem" id="form6Example7" rows="6" placeholder="Mensagem:" required></textarea>
               <label class="form-label" for="form6Example7"></label>
             </div>
           
     
             <!-- Submit button -->
-            <button type="submit" class="btn enviar btn-primary btn-block mb-4">Enviar</button>
+          <button type="submit" name="submit" style="width:100%; padding: 10px;" class="btn enviar btn-primary btn-block mb-6">Enviar</button>
           </form>
-          
-            <div class="icones">
-              <button type="button" class="btn btn-primary btn-floating mx-1 " >
-                <i class="fab fa-facebook-f"></i>
-              </button>
-          
-              <button type="button" class="btn btn-primary btn-floating mx-1" >
-                <i class="fab fa-google"></i>
-              </button>
-          
-              <button type="button" class="btn btn-primary btn-floating mx-1" >
-                <i class="fab fa-twitter"></i>
-              </button>
-          
-              <button type="button" class="btn btn-primary btn-floating mx-1" >
-                <i class="fab fa-github"></i>
-              
-              </button>
-            </div>
-  
+         
+   
        
   <!--Mapa Google-->
   
@@ -234,19 +217,19 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Products
+              Produtos de Doação
             </h6>
             <p>
-              <a href="#!" class="text-reset">Angulars</a>
+              <a href="#!" class="text-reset">Alimentos</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">React</a>
+              <a href="#!" class="text-reset">Roupas</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Vue</a>
+              <a href="#!" class="text-reset">Material Escolar</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Laravel</a>
+              <a href="#!" class="text-reset">Extras</a>
             </p>
           </div>
           <!-- Grid column -->
