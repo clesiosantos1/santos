@@ -69,8 +69,10 @@
 #form6Example7:hover{
     background-color: aliceblue;
 }
-#formulario {
-   width: 50%;
+
+#formulario{
+    width: 100%;
+    background-color: black;
 }
 
 
