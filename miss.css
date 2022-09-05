@@ -9,7 +9,7 @@ h1
     
 }
 .logo-pw p {
-    text-align: center
+    text-align: center;
 }
 
 .logo-pw div a span {
@@ -17,14 +17,9 @@ h1
 }
 
 body {
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
-* {
-   
-    margin: 0;
-    padding: 0
-}
 
 #erro-total {
     width: 700px;
@@ -35,7 +30,7 @@ body {
 #imagem-centralizada {
     width: 100%;
     text-align: center;
-    margin: 10px 0
+    margin: 10px 0;
 }
 
 #texto-404 {
@@ -50,34 +45,34 @@ body {
     font-family: Calibri;
     font-size: 19px;
     text-align: center;
-    margin: 5px 0
+    margin: 5px 0;
 }
 
 .page-404 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 600px
+    height: 600px;
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .global {
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 @keyframes titulo {
     100% {
-        height: 100%
+        height: 100%;
     }
 }
 
 .texto-pages {
     display: flex;
     margin-bottom: 20px;
-    position: relative
+    position: relative;
 }
 
 .texto-pages::after {
@@ -87,7 +82,7 @@ a {
     height: 0;
     background: #ef4b3f;
     z-index: -1;
-    animation: titulo 2s forwards cubic-bezier(0.68, -0.55, 0.27, 1.55)
+    animation: titulo 2s forwards cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .texto-pages h1 {
@@ -114,11 +109,11 @@ p {
     color: #333;
     margin: 20px 0;
     padding: 0 10px;
-    text-align: justify
+    text-align: justify;
 }
 
 .menu-resp {
-    display: none
+    display: none;
 }
 
 .swiper-container {
@@ -128,15 +123,15 @@ p {
     position: relative;
     z-index: 1;
     box-shadow: 0 2px 4px -1px #b5b5b5;
-    transition: all .5s
+    transition: all .5s;
 }
 
 .fancybox-container * {
-    color: #fff !important
+    color: #fff !important;
 }
 
 .linha-total {
-    background: #32338e
+    background: #32338e,
 }
 
 .linha-total .linha {
@@ -144,7 +139,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 1200px;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 .linha .item {
@@ -153,10 +148,10 @@ p {
     padding: 10px 0;
     text-align: center
 }
-
+/* erro no */
 .linha .item a {
     color: inherit;
-    font: inherit
+    font: inherit;
 }
 
 .linha .item * {
@@ -170,43 +165,43 @@ p {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 20px 0 !important
+    margin: 20px 0 !important;
 }
 
 .menu {
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
 }
 
 .menu li {
     display: inline-block;
     list-style: none;
-    padding: 0 10px
+    padding: 0 10px;
 }
 
 .menu li a {
     display: block;
     padding: 20px 5px 40px;
     font: 16px calibri;
-    color: #999
+    color: #999;
 }
 
 .menu li a:hover {
-    color: #32338e
+    color: #32338e;
 }
 
 .menu li .ativo {
     color: #32338e;
     box-shadow: 0 4px 0 0 #4D4EDA inset;
-    position: relative
+    position: relative;
 }
 
 .menu li .ativo::before {
@@ -236,12 +231,12 @@ p {
     font: 23px calibri;
     padding: 20px 0;
     width: 330px;
-    text-align: center
+    text-align: center;
 }
 
 .rodape .item a {
     color: inherit;
-    font: inherit
+    font: inherit;
 }
 
 .rodape .item i {
@@ -249,7 +244,7 @@ p {
     font-size: 80px;
     display: block;
     text-align: center;
-    height: 100px
+    height: 100px;
 }
 
 .menu-rodape {
@@ -261,14 +256,14 @@ p {
     display: inline-block;
     list-style: none;
     padding: 0 10px;
-    text-align: center
+    text-align: center;
 }
 
 .menu-rodape li a {
     display: block;
     padding: 20px 0px;
     font: 15px calibri;
-    color: #fff
+    color: #fff;
 }
 
 .logo-pw {
@@ -294,7 +289,7 @@ p {
 }
 
 .box-01 .conteudo {
-    width: 580px
+    width: 580px;
 }
 
 .box-01 .conteudo .titulo {
@@ -320,7 +315,7 @@ p {
     transition: all linear .8s .55s;
     height: 100%;
     background: #4D4EDA;
-    position: relative
+    position: relative;
 }
 
 .box-01-total:hover .conteudo .linha .barra {
@@ -354,7 +349,7 @@ p {
     box-shadow: 0 0 8px 0 #fff inset;
     display: flex;
     align-items: center;
-    position: relative
+    position: relative;
 }
 
 .box-01 .img .info {
@@ -419,7 +414,7 @@ p {
 .box-02 .item .titulo {
     font: 25px calibri;
     color: #fff;
-    margin: 40px 0
+    margin: 40px 0;
 }
 
 .box-02 .item .conteudo {
@@ -443,12 +438,12 @@ p {
     width: 904px;
     margin: 30px auto;
     opacity: .6;
-    transition: all linear .8s .55s
+    transition: all linear .8s .55s;
 }
 
 .box-03-total:hover .box-03 {
     opacity: 1;
-    transition: all linear .5s
+    transition: all linear .5s;
 }
 
 .box-03 .titulo {
@@ -476,7 +471,7 @@ p {
     transition: all linear .8s .55s;
     height: 100%;
     background: #4D4EDA;
-    position: relative
+    position: relative;
 }
 
 .box-03-total:hover .linha .barra {
@@ -525,15 +520,7 @@ p {
 }
 
 .box-03 .submit {
-    width: 100%;
-    padding: 20px 70px;
-    background: #4D4EDA;
-    margin: 0 auto;
-    color: #fff;
-    font: 20px calibri;
-    display: table;
-    transition: all .5s;
-    cursor: pointer
+
 }
 
 .formulario {
@@ -567,11 +554,11 @@ p {
     background: #eee;
     outline: none !important;
     resize: none;
-    font: 18px calibri
+    font: 18px ;
 }
 
 .formulario textarea:focus {
-    box-shadow: 2px 0 0 0 #4D4EDA inset
+    box-shadow: 2px 0 0 0 #4D4EDA inset;
 }
 
 .formulario .submit {
@@ -583,22 +570,22 @@ p {
     font: 20px calibri;
     display: table;
     transition: all .5s;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .conteudo-pages h1 {
     font: 45px calibri;
     color: #4D4EDA;
     text-align: center;
-    margin-bottom: 40px
+    margin-bottom: 40px;
 }
 
 .conteudo-pages h1::first-line {
-    color: #32338e
+    color: #32338e;
 }
 
 .mapa iframe {
-    width: 100%
+    width: 100%;
 }
 
 .mapa img {
@@ -608,7 +595,7 @@ p {
 @media only screen and (max-width:1200px) {
     * {
         box-sizing: border-box;
-        max-width: 100%
+        max-width: 100%;
     }
 
     .linha-total *,
@@ -627,13 +614,13 @@ p {
     }
 
     .conteudo-pages {
-        padding: 2%
+        padding: 2%;
     }
 
     .topo>div {
         width: 100%;
         margin: 10px 0;
-        text-align: center
+        text-align: center;
     }
 
     .menu-resp {
@@ -641,11 +628,11 @@ p {
         background: url(template/images/menu-resp.png) center no-repeat, #32338e;
         padding: 20px;
         cursor: pointer;
-        margin-bottom: 0 !important
+        margin-bottom: 0 !important;
     }
 
     .menu {
-        display: none
+        display: none;
     }
 
     .menu li {
@@ -653,7 +640,7 @@ p {
         margin-left: 0;
         margin-right: 0;
         text-align: center;
-        padding: 0
+        padding: 0;
     }
 
     .menu li a {
@@ -661,13 +648,13 @@ p {
     }
 
     #wowslider-container1 {
-        display: none !important
+        display: none !important;
     }
 
     .rodape div {
         width: 100%;
         margin: 20px 0;
-        text-align: center
+        text-align: center;
     }
 
     .menu-rodape li {
@@ -677,7 +664,7 @@ p {
 
 @media only screen and (max-width:980px) {
     .box-03 .item {
-        width: 100%
+        width: 100%;
     }
 }
 
@@ -790,11 +777,11 @@ p {
 
 @media only screen and (max-width:600px) {
     .missao .resp {
-        display: block
+        display: block;
     }
 
     .missao .img {
-        display: none
+        display: none;
     }
 }
 
@@ -803,7 +790,7 @@ p {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .horarios .item {
@@ -857,7 +844,7 @@ p {
 
 @media only screen and (max-width:1096px) {
     .acoes .grupo .item:last-child {
-        width: 360px
+        width: 360px;
     }
 }
 
@@ -1070,6 +1057,6 @@ li#cor a {
     }
 
     .mapa img {
-        display: block;
+        display: none;
     }
 }
