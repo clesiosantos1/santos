@@ -1,21 +1,11 @@
-.horario{
-    text-align: center;
-    text-decoration: dashed;
-    font-size: 13pt;
-    font-family: Arial, Helvetica, sans-serif;
-   
+div#horario {
+    width: 50%;
+    float: left;
+    background-color: black;
+    font-family: 17pt;
 }
 
-#hora{
-    text-align: center;
-    padding: 2em;
-    height: 120px;
-    background-color: #ef4b3f;
-    color: #fff;
-}
-#hora h1 {
-    font-weight: 300;
-}
-.horario h1 {
-    color: #32338e;
+#horarios{
+    background-color: blueviolet;
+    width: 50px;
 }
