@@ -1,11 +1,6 @@
-div#horario {
-    width: 50%;
-    float: left;
-    background-color: black;
-    font-family: 17pt;
+.hora h1{
+    text-align: center;
+    color: #32338e;
+    
 }
 
-#horarios{
-    background-color: blueviolet;
-    width: 50px;
-}
