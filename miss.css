@@ -536,7 +536,7 @@ p {
     box-sizing: border-box;
     background: #eee;
     outline: none !important;
-    font: 18px calibri
+    font: 18px ;
 }
 
 .formulario input:focus {
