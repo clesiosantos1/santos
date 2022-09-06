@@ -27,7 +27,7 @@ a, a:hover{
     align-items: center;
     justify-content: space-around;
     padding: 10px 25px;
-    background: khaki;
+    background: #4ABDAC;
 }
 .top-bar span{
     color: #fff;
@@ -124,7 +124,7 @@ justify-content: center;
 
 .color_orange{
     color: #ffffff;
-    background-color: #ef4b3f;
+    background: #FC4A1A;
  font-size: 20px;
  width: 15em;
  text-align: center;

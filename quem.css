@@ -76,6 +76,7 @@
             display: flex;
             margin-bottom: 20px;
             position: relative;
+            background: #4ABDAC;
         }
         
         .texto-pages::after {
@@ -83,7 +84,7 @@
             width: 100%;
             position: absolute;
             height: 0;
-            background: #ef4b3f;
+           background: #4ABDAC;
             z-index: -1;
             animation: titulo 2s forwards cubic-bezier(0.68, -0.55, 0.27, 1.55)
         }
@@ -980,7 +981,7 @@
         .portal .conteudo .item li a {
             font: 20px calibri;
             color: #fff;
-            background: #f58635;
+           background: #4ABDAC;
             display: block;
             text-align: center;
             padding: 5px 0;
@@ -989,7 +990,7 @@
         }
         
         li#cor a {
-            background: #f36600;
+               background: #4ABDAC;
         }
         
         .contato {
@@ -1057,10 +1058,11 @@
         }
         
         .contato .conteudo .box .submit {
-            background: #f58635;
+              background: #4ABDAC;
             color: #fff;
             cursor: pointer;
         }
+   
        
        
        
