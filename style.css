@@ -27,7 +27,7 @@ a, a:hover{
     align-items: center;
     justify-content: space-around;
     padding: 10px 25px;
-    background: #ef4b3f;
+    background: #4ABDAC;
 }
 .top-bar span{
     color: #fff;
@@ -97,6 +97,7 @@ nav a:hover{
 
 .nav-link{
     color: #ef4b3f;
+  
 }
 
 
