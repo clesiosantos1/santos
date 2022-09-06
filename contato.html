@@ -7,11 +7,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="bulma.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 </head>
+<style>
+  
+
+  .navbar-expand-lg {
+    background-color: rgb(190, 189, 189);
+  }
+  
+  .button.is-medium {
+    font-size: 1.25rem;
+    width: 100%;
+    color: white;
+  }
+  </style>
 <body>
   <div class="top-bar" id="clesio34">
     <ul>
@@ -23,6 +37,8 @@
         <li><a href="login.php"><ion-icon name="enter-outline"></ion-icon></a></li>
     </ul>
 </div>
+
+
 <!--menu-->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
@@ -57,107 +73,80 @@
 
 
 
-      <!--carrosel-->
-     <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/2022-09-01_10h41_42.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide labelj</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content foe third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div> -->
 
-<!--corpo do projecto-->
-  
-<div class="contato">
-  <h2>ENTRE EM  CONTATO</h2>
-  
-</div>
-<hr>
           
           <!--formulario-->
-          <form class="container" action="processa.php" method="POST" id="formulario" >  
-            <!-- 2 column grid layout with text inputs for the first and last names -->
-            <div class="row mb-4">
-              <div class="col">
-                <div class="form-outline">
-                  <input type="text" id="form6Example1" name="nome" class="form-control" placeholder="Nome Completo:" required />
-                  <label class="form-label" for="form6Example1"></label>
+          <section class="section">
+            <div class="container">
+              <div class="columns is-centered">
+                <div class="column is-half">
+                  <h1 class="title has-text-centered">Fale com um colaborador </h1>
+          
+                  <form action="processa.php" method="POST">
+                    <div class="field">
+                      <label class="label">Nome</label>
+                      <div class="control">
+                        <input name="nome" class="input" type="text" placeholder="Seu nome">
+                      </div>
+                    </div>
+          
+                    <div class="field">
+                      <label class="label">apelido</label>
+                      <div class="control">
+                        <input name="apelido" class="input" type="text" placeholder="Seu apelido">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">endereço *</label>
+                      <div class="control">
+                        <input name="endereco" class="input" type="text" placeholder="Seu seu endereço">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">email *</label>
+                      <div class="control">
+                        <input name="email" class="input" type="email" placeholder="Seu seu email">
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label class="label">telefone</label>
+                      <div class="control">
+                        <input name="telefone" class="input" type="number" placeholder="number">
+                      </div>
+                    </div>
+          
+                    <div class="field">
+                      <label class="label">Assunto</label>
+                      <div class="control">
+                        <div class="select is-fullwidth">
+                          <select name="assunto">
+                            <option>Reportar erro</option>
+                            <option>Anúncios</option>
+                            <option>Outro</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div class="field">
+                      <label class="label">Mensagem *</label>
+                      <div class="control">
+                        <textarea name="mensagem" class="textarea" placeholder="Deixe sua mensagem" maxlength="2000"></textarea>
+                      </div>
+                    </div>
+          
+                    <div class="field is-grouped">
+                      <div class="control">
+                        <button name="submit" class="button is-link is-medium " >Enviar</button>
+                      </div>
+                    </div>
+                  </form>
+          
                 </div>
               </div>
-              <div class="col">
-                <div class="form-outline">
-                  <input type="text" id="form6Example2" id="form-c" name="apelido"  class="form-control" placeholder="Apelido" />
-                  <label class="form-label" for="form6Example2"></label>
-                </div>
-              </div>
             </div>
+          </section>
           
-            <!-- Text input -->
-            <div class="form-outline mb-4">
-              <input type="text" id="form6Example3" class="form-control" name="endereco" placeholder="Endereço:" required />
-              <label class="form-label" for="form6Example3"></label>
-            </div>
-          
-            <!-- Text input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form6Example4" name="email" class="form-control" placeholder="Email:" required />
-              <label class="form-label" for="form6Example4"></label>
-            </div>
-          
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="number" id="form6Example5" name="telefone" class="form-control" placeholder="Telefone:" required />
-              <label class="form-label" for="form6Example5"></label>
-            </div>
-          
-            <!-- Number input -->
-            <div class="form-outline mb-4">
-              <input type="text" id="form6Example6" name="assunto" class="form-control" placeholder="Assunto:" />
-              <label class="form-label" for="form6Example6"></label>
-            </div>
-          
-            <!-- Message input -->
-            <div class="form-outline mb-4">
-              <textarea class="form-control" name="mensagem" id="form6Example7" rows="6" placeholder="Mensagem:" required></textarea>
-              <label class="form-label" for="form6Example7"></label>
-            </div>
-          
-    
-            <!-- Submit button -->
-          <button type="submit" name="submit" style="width:100%; padding: 10px;" class="btn enviar btn-primary btn-block mb-6">Enviar</button>
-          </form>
-        
          
    
        
