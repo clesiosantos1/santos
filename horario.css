@@ -1,22 +1,20 @@
 .hora h1{
     text-align: center;
-    color: #32338e;
+    color: #fff;
     
 }
 
-<<<<<<< HEAD
-=======
-#hora{
+
+.hora{
     text-align: center;
     padding: 2em;
-    height: 120px;
+    height: 100px;
     background-color: #ef4b3f;
     color: #fff;
 }
 #hora h1 {
     font-weight: 300;
 }
-.horario h1 {
+.horario h1 {   
     color: #32338e;
 }
->>>>>>> c1a284bd2037ab2de64f3d4ebfa70c34d53b2126
