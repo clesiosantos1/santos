@@ -8,6 +8,8 @@
 .hora{
     text-align: center;
     padding: 2em;
+    height: 100px;
+    background-color: #ef4b3f;
     color: #fff;
 }
 #hora h1 {
