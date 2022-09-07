@@ -385,7 +385,7 @@
         }
         
         .box-02-total {
-            background: #32338e
+            background: #32338e;
         }
         
         .box-02 {
@@ -741,7 +741,7 @@
         .quem-somos .objetivos li {
             width: 280px;
             list-style: none;
-            background: #32338e;
+            background:  #ffaf53;
             color: #fff;
             font: 17px calibri;
             padding: 30px;
@@ -750,7 +750,7 @@
             display: flex;
             text-align: center;
             justify-content: center;
-            box-shadow: 0 0 0 5px inset #32338e, 0 0 0 6px inset #fff;
+            box-shadow: 0 0 0 5px inset , 0 0 0 6px inset #fff;
             border-radius: 20px;
         }
         

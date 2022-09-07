@@ -260,4 +260,6 @@ transition: 1s;
     width: 100%;
 }
 
-
+.text-center{
+    margin-top: -20px;
+}
