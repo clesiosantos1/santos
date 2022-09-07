@@ -204,7 +204,7 @@ display: flex;
  padding: 20px;
 }
 .item2{
-    background-color:  #ef4b3f;
+    background-color:  #ffaf53;
     min-height: 5em;
     display: flex;
     color: rgb(255, 255, 255);
@@ -216,9 +216,9 @@ display: flex;
 }
 
 .item2:hover{
- color: #ef4b3f;
+ color: #ffaf53;
  background-color: rgb(243, 238, 238);
-border: 1px solid #ef4b3f;
+border: 1px solid  #ffffff;
 margin-top: -10px;
 transition: 1s;
 }
