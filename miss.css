@@ -80,7 +80,7 @@ a {
     width: 100%;
     position: absolute;
     height: 0;
-    background: #ef4b3f;
+    background: #4ABDAC;
     z-index: -1;
     animation: titulo 2s forwards cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }

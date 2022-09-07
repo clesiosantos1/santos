@@ -18,3 +18,10 @@
 .horario h1 {   
     color: #32338e;
 }
+.bgrs h3 {
+    color: #32338e;
+    font-weight: 400;
+}
+.bgrs p {
+    font-size: 17pt;
+}

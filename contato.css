@@ -73,6 +73,20 @@ form .container{
 }
 
 
+#treino{
+background-image: url('imgem/banner-contato.jpg');
+height: 25em;
+background-size: cover;
+}
+
+.item3{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    color: white;
+    font-weight: 700;
+}
+
 
 
 
