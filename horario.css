@@ -1,27 +1,5 @@
-.hora h1{
-    text-align: center;
-    color: #fff;
-    
-}
-
-
-.hora{
-    text-align: center;
-    padding: 2em;
-    height: 100px;
-    background-color: #ef4b3f;
-    color: #fff;
-}
-#hora h1 {
-    font-weight: 300;
-}
-.horario h1 {   
-    color: #32338e;
-}
-.bgrs h3 {
-    color: #32338e;
-    font-weight: 400;
-}
-.bgrs p {
-    font-size: 17pt;
+#relogio {
+    height: 500px;
+    background-color: black;
+    font-size: 60pt;
 }
