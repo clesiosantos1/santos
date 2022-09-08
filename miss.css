@@ -5,7 +5,7 @@
 h1
 {
     text-align: center;
-    
+ 
     
 }
 .logo-pw p {
@@ -80,7 +80,7 @@ a {
     width: 100%;
     position: absolute;
     height: 0;
-    background: #4ABDAC;
+    background: #328CC1;
     z-index: -1;
     animation: titulo 2s forwards cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
@@ -519,9 +519,8 @@ p {
     box-shadow: 2px 0 0 0 #4D4EDA inset
 }
 
-.box-03 .submit {
 
-}
+
 
 .formulario {
     margin: 40px 0

@@ -20,12 +20,12 @@ if($btnLogin){
 				$_SESSION['email'] = $row_usuario['email'];
 				header("Location: administrativo.php");
 			}else{
-				$_SESSION['msg'] = "Login e senha incorreto!";
+				$_SESSION['msg'] = "<script> alert('Login e senha incorreto')</script>";
 				header("Location: login.php");
 			}
 		}
 	}else{
-		$_SESSION['msg'] = "Login e senha incorreto!";
+		$_SESSION['msg'] = "<script> alert('Login e senha incorreto')</script>";
 		header("Location: login.php");
 	}
 }else{

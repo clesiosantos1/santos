@@ -32,7 +32,7 @@ session_start();
 		border-radius: 5px;
 		border: 1px solid white;
 		padding:40px;
-		background-color:#ef4b3f;
+		background-color:#128CC1;
 	}
 	body{
 
@@ -63,11 +63,11 @@ session_start();
 		<form method="POST" action="valida.php">
 		<div class="input-group mb-3">
          <span class="input-group-text" id="basic-addon1"><ion-icon name="person-circle-outline"></ion-icon></span>
-      <input type="text"  name="usuario" placeholder="Digite o seu usuário" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+      <input type="text"  name="usuario" placeholder="Digite o seu usuário" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
          </div>
 		<div class="input-group mb-3">
          <span class="input-group-text" id="basic-addon1"><ion-icon name="key-outline"></ion-icon></span>
-      <input  type="password" name="senha" placeholder="Digite a sua senha" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+      <input  type="password" name="senha" placeholder="Digite a sua senha" class="form-control" aria-label="Username" aria-describedby="basic-addon1" required>
          </div>
 		 <input class="btn btn-danger" type="submit" name="btnLogin" value="Acessar">
 		 <button class="btn btn-primary"><a style="color:white; text-decoration:none;" href="index.html">Voltar</a></button>

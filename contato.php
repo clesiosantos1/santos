@@ -1,3 +1,26 @@
+<?php
+
+include_once("config.php");
+
+if(isset($_POST['submit'])){
+    $nome = $_POST['nome'];
+    $apelido = $_POST['apelido'];
+    $endereco = $_POST['endereco'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $assunto = $_POST['assunto'];
+    $mensagem = $_POST['mensagem'];
+
+    $result = mysqli_query($conexao, "INSERT INTO usuarios123 (nome,apelido,endereco,email,telefone,assunto,mensagem)  VALUES ('$nome','$apelido','$endereco','$email','$telefone','$assunto','$mensagem') ");
+
+    header('location: contato.php');
+}
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +31,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contato.css">
     <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="vai.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -42,7 +66,7 @@
 <!--menu-->
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo" id="letra" src="img/images-(4).png" alt=""></a>
+          <a class="navbar-brand" href="#"><img class="logo" id="letra" src="img/22222.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -64,7 +88,7 @@
                 <a class="nav-link active" id="texte" href="portal.html" tabindex="-1" aria-disabled="true">PORTAL DE TRANSPARÊNCIA</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" id="texte" href="contato.html" tabindex="-1" aria-disabled="true">CONTACTO</a>
+                <a class="nav-link active" id="texte" href="contato.php" tabindex="-1" aria-disabled="true">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -82,77 +106,97 @@
 
 
           
-          <!--formulario-->
-          <section class="section">
+<!--contato-->
+
+          <div class="contact section-padding" data-scroll-index='4'>
             <div class="container">
-              <div class="columns is-centered">
-                <div class="column is-half">
- 
-          
-                  <form action="processa.php" method="POST">
-                    <div class="field">
-                      <label class="label">Nome</label>
-                      <div class="control">
-                        <input name="nome" class="input" type="text" placeholder="Seu nome">
+              <div class="row">
+                <div class="col-md-12 section-title text-center">
+                  <span class="section-title-line"></span> </div>
+                <div class="col-lg-5 col-md-4">
+                  <div class="part-info">
+                    <div class="info-box">
+                      <div class="icon"> <i class="fas fa-phone"></i> </div>
+                      <div class="content">
+                        <h4>Telefone</h4>
+                        <p>927152537</p>
                       </div>
                     </div>
-          
-                    <div class="field">
-                      <label class="label">apelido</label>
-                      <div class="control">
-                        <input name="apelido" class="input" type="text" placeholder="Seu apelido">
+                    <div class="info-box">
+                      <div class="icon"> <i class="fas fa-map-marker-alt"></i> </div>
+                      <div class="content">
+                        <h4>Endereço</h4>
+                        <p>Angola, Luanda </p>
                       </div>
                     </div>
-                    <div class="field">
-                      <label class="label">endereço *</label>
-                      <div class="control">
-                        <input name="endereco" class="input" type="text" placeholder="Seu seu endereço">
+                    <div class="info-box">
+                      <div class="icon"> <i class="fas fa-envelope"></i> </div>
+                      <div class="content">
+                        <h4>E-mail</h4>
+                        <p><a href="#" style="color: rgb(0, 0, 0);">ics0571275@gmail.com</a></p>
                       </div>
                     </div>
-                    <div class="field">
-                      <label class="label">email *</label>
-                      <div class="control">
-                        <input name="email" class="input" type="email" placeholder="Seu seu email">
-                      </div>
-                    </div>
-                    <div class="field">
-                      <label class="label">telefone</label>
-                      <div class="control">
-                        <input name="telefone" class="input" type="number" placeholder="number">
-                      </div>
-                    </div>
-          
-                    <div class="field">
-                      <label class="label">Assunto</label>
-                      <div class="control">
-                        <div class="select is-fullwidth">
-                          <select name="assunto">
-                            <option>Reportar erro</option>
-                            <option>Anúncios</option>
-                            <option>Outro</option>
-                          </select>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-8">
+                  <div class="contact-form">
+                    <form class='form' id='contact-form' method='POST' action="contato.php" data-toggle='validator'>
+                      <div class="messages"></div>
+                      <div class="controls">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <input id="form_name" type="text" name="nome" placeholder="Nome completo *" required data-error="name is required.">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <input id="form_email" type="text" name="apelido" placeholder="apelido" required data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <input id="form_email" type="text" name="endereco" placeholder="endereco" required data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <input id="form_email" type="email" name="email" placeholder="email" required data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <input id="form_email" type="number" name="telefone" placeholder="telefone" required data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="form-group">
+                              <input id="form_email" type="text" name="assunto" placeholder="assunto" required data-error="Valid email is required.">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                
+                          </div>
+                          <div class="col-lg-12 form-group">
+                            <textarea id="form_message" name="mensagem" class="form-control" placeholder=" Coloque aqui a mensagem " rows="4" required data-error="Please,leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                          </div>
+                          <div class="col-lg-12 text-center">
+                            <button class="bttn" name="submit">Enviar</button>
+                          </div>
                         </div>
                       </div>
-                    </div>
-          
-                    <div class="field">
-                      <label class="label">Mensagem *</label>
-                      <div class="control">
-                        <textarea name="mensagem" class="textarea" placeholder="Deixe sua mensagem" maxlength="2000"></textarea>
-                      </div>
-                    </div>
-          
-                    <div class="field is-grouped">
-                      <div class="control">
-                        <button name="submit" class="button is-link is-medium " >Enviar</button>
-                      </div>
-                    </div>
-                  </form>
-          
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
 
 
      
@@ -164,11 +208,10 @@
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126153.01039519216!2d13.214063286848631!3d-8.853356215276337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f15cdc8d2c7d%3A0x850c1c5c5ecc5a92!2sLuanda!5e0!3m2!1spt-BR!2sao!4v1662036757321!5m2!1spt-BR!2sao" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   
 
-
-      <!--footer-->
+  <!--footer-->
 
       <!-- Footer -->
-      <footer class="text-center text-lg-start  text-muted" style="background-color:#4ABDAC; ">
+      <footer class="text-center text-lg-start  text-muted" style="background-color:#328CC1;">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <!-- Left -->
@@ -203,7 +246,7 @@
                 <h6 style="color: white;" class="text-uppercase fw-bold mb-4">
                   <i class="fas fa-gem me-3"></i>Lar de Caridade
                 </h6>
-                <img src="img/images-(4).png"id="ccc" alt="">
+                <img src="img/22222.png" style="border-radius: 50%;" id="ccc" alt="">
               </div>
               <!-- Grid column -->
       
@@ -267,17 +310,19 @@
             <!-- Grid row -->
           </div>
         </section>
-        <!-- Section: Links  -->
-      
+     
+      <!-- carlos  Cor -->
         <!-- Copyright -->
-        <div class="text-center p-4" style="background: #4abdac; color: white;">
+        <div class="text-center p-4" style="background:#328CC1; color: white;">
           © 2021 Copyright:
           <a class="text-reset fw-bold" href="https://mdbootstrap.com/" style="text-decoration:none;">LarCaridade.com</a>
-          <ion-icon name="qr-code-outline" style="color:white"></ion-icon>
+          <ion-icon name="qr-code-outline" ></ion-icon>
         </div>
         <!-- Copyright -->
       </footer>
       <!-- Footer -->
+    
+    
 
 
     </script>

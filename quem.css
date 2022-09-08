@@ -23,6 +23,10 @@
             margin: 0;
             padding: 0;
         }
+
+        #views{
+            background-color: #128CC1;
+        }
         
         #erro-total {
             width: 700px;
@@ -76,7 +80,7 @@
             display: flex;
             margin-bottom: 20px;
             position: relative;
-            background: #4ABDAC;
+            background: #128CC1;
         }
         
         .texto-pages::after {
@@ -101,7 +105,7 @@
         
         h2 {
             font: 30px calibri;
-            color: #32338e;
+            color: #000000;
             font-weight: lighter;
             margin: 20px 0;
             padding: 0 10px;
