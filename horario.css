@@ -7,11 +7,30 @@
     background-color: #4ABDAC;
     
 }
-div {
-    display: flex;
-    justify-content: space-around;
+.direita {
+    width: 50%;
+    float: right;
+    height: 100px;
+    padding: 5px;
+    text-align: center;
 }
-.horas p {
-    display: flex;
-    justify-content: space-evenly;
+.direita h3 {
+    padding: 20px;
+    text-align: center;
+    color: #32338e;
+    border-top: #32338e solid 1px;
 }
+.esquerda {
+    width: 50%;
+    float: right;
+    padding: 5px;
+    height: 100px;
+    text-align: center;
+}
+.esquerda h3 {
+    padding: 20px;
+    text-align: center;
+    color: #32338e;
+    border-top: 1px solid #32338e ;
+}
+
