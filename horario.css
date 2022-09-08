@@ -1,6 +1,17 @@
-.relogio span {
-    font-size: 40pt;
+#hora h1 {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    background-color: #4ABDAC;
+    
 }
-span {
-    color:red;
+div {
+    display: flex;
+    justify-content: space-around;
+}
+.horas p {
+    display: flex;
+    justify-content: space-evenly;
 }
