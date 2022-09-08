@@ -1,5 +1,6 @@
-#relogio {
-    height: 500px;
-    background-color: black;
-    font-size: 60pt;
+.relogio span {
+    font-size: 40pt;
+}
+span {
+    color:red;
 }
