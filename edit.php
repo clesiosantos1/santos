@@ -1,20 +1,41 @@
 <?php
 
-include_once("config.php");
 
-if(isset($_POST['submit'])){
-    $nome = $_POST['nome'];
-    $apelido = $_POST['apelido'];
-    $endereco = $_POST['endereco'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
-    $assunto = $_POST['assunto'];
-    $mensagem = $_POST['mensagem'];
+/* se nao est5iver vazio */
+if(!empty($_GET['id']))
+{
 
-    $result = mysqli_query($conexao, "INSERT INTO usuarios123 (nome,apelido,endereco,email,telefone,assunto,mensagem)  VALUES ('$nome','$apelido','$endereco','$email','$telefone','$assunto','$mensagem') ");
 
-    header('location: contato.php');
+  include_once("config.php");
+
+  $id =  $_GET['id'];
+
+  $sqlselect = "SELECT * FROM  usuarios123 WHERE id=$id";
+
+  $result = $conexao->query($sqlselect);
+
+  if($result->num_rows > 0){
+
+
+    while($user_data = mysqli_fetch_assoc($result))
+    {
+        $nome = $user_data['nome'];
+        $apelido = $user_data['apelido'];
+        $endereco = $user_data['endereco'];
+        $email = $user_data['email'];
+        $telefone = $user_data['telefone'];
+        $assunto = $user_data['assunto'];
+        $mensagem = $user_data['mensagem'];
+     }
+
+  }
+  else
+  {
+  header('location: administrativo.php'); 
+  }
+
 }
+
 
 
 ?>
@@ -38,7 +59,7 @@ if(isset($_POST['submit'])){
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 </head>
 
-<body>
+<body style="background-color:rgb(0,135,183);">
 
 
 
@@ -67,49 +88,68 @@ if(isset($_POST['submit'])){
                         <div class="row">
                           <div class="col-lg-6">
                             <div class="form-group">
-                              <input id="form_name" type="text" name="nome" placeholder="Nome completo *" required data-error="name is required.">
+                              <input id="form_name" type="text" name="nome" placeholder="Nome completo *" required data-error="name is required." value="<?php echo $nome;  ?>">
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
                           <div class="col-lg-6">
                             <div class="form-group">
-                              <input id="form_email" type="text" name="apelido" placeholder="apelido" required data-error="Valid email is required.">
+                              <input id="form_email" type="text" name="apelido" placeholder="apelido" required data-error="Valid email is required." value="<?php echo $apelido;  ?>"> 
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
                           <div class="col-lg-6">
                             <div class="form-group">
-                              <input id="form_email" type="text" name="endereco" placeholder="endereco" required data-error="Valid email is required.">
+                              <input id="form_email" type="text" name="endereco" placeholder="endereco" required data-error="Valid email is required." value="<?php echo $endereco;  ?>">
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
                           <div class="col-lg-6">
                             <div class="form-group">
-                              <input id="form_email" type="email" name="email" placeholder="email" required data-error="Valid email is required.">
+                              <input id="form_email" type="email" name="email" placeholder="email" required data-error="Valid email is required." value="<?php echo $email  ?>">
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
                           <div class="col-lg-6">
                             <div class="form-group">
-                              <input id="form_email" type="number" name="telefone" placeholder="telefone" required data-error="Valid email is required.">
+                              <input id="form_email" type="number" name="telefone" placeholder="telefone" required data-error="Valid email is required." value="<?php echo $telefone ?>">
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
                           <div class="col-lg-6">
                             <div class="form-group">
-                              <input id="form_email" type="text" name="assunto" placeholder="assunto" required data-error="Valid email is required.">
+                              <input id="form_email" type="text" name="assunto" placeholder="assunto"  required data-error="Valid email is required."  value="<?php echo $assunto ?>">
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                              <input id="form_email" type="text" name="mensagem" placeholder="mensagem"  required data-error="Valid email is required."  value="<?php echo $mensagem ?>">
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
                 
                           </div>
-                          <div class="col-lg-12 form-group">
-                            <textarea id="form_message" name="mensagem" class="form-control" placeholder=" Coloque aqui a mensagem " rows="4" required data-error="Please,leave us a message."></textarea>
+                          <!-- <div class="col-lg-12 form-group">
+                            <textarea id="form_message" name="mensagem" class="form-control" placeholder=" Coloque aqui a mensagem " rows="4" required data-error="Please,leave us a message." value="<?php echo $telefone ?>"></textarea>
                             <div class="help-block with-errors"></div>
-                          </div>
+                          </div> -->
+
+                          <style>
+                            .foi{
+                              background-color:rgb(0,135,183);
+                              margin:1em;
+
+                            }
+
+                            
+                          </style>
                           <div class="col-lg-12 text-center">
-                            <button class="bttn" name="submit">Enviar</button>
-                            <button class="btn btn-danger"  name="submit">Sair</button>
+                            <div class="foi">
+                                      <button class="btn btn-dark" name="submit">Salvar</button>
+                            <button class="btn btn-danger"  name="submit" ><a style="text-decoraction:none; color:white;" href="administrativo.php">Sair</a></button>
+                            </div>
+                    
                           </div>
                         </div>
                       </div>
