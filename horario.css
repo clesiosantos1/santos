@@ -35,3 +35,10 @@
     border-top: 1px solid #32338e ;
 }
 
+
+#horas{
+    background-image: url('imgem/Design sem nome (2).png');
+min-height: 38em;
+    background-size: cover;
+    width: 100%;
+}
