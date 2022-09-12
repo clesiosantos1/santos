@@ -1,44 +1,18 @@
-#hora h1 {
+.horario h1, p {
     text-align: center;
-    height: 100px;
-    width: 100%;
-    padding: 15px;
-    color: white;
-    background-color: #4ABDAC;
     
 }
-.direita {
-    width: 50%;
-    float: right;
-    height: 100px;
-    padding: 5px;
+span {
     text-align: center;
 }
-.direita h3 {
-    padding: 20px;
-    text-align: center;
-    color: #32338e;
-    border-top: #32338e solid 1px;
-}
-.esquerda {
-    width: 50%;
-    float: right;
-    padding: 5px;
-    height: 100px;
-    text-align: center;
-    display: block;
-}
-.esquerda h3 {
-    padding: 20px;
-    text-align: center;
-    color: #32338e;
-    border-top: 1px solid #32338e ;
+.horario p {
+    font-size: 15pt;
+    
 }
 
 
-#horas{
-    background-image: url('imgem/Design sem nome (2).png');
-min-height: 38em;
-    background-size: cover;
+.btn{
     width: 100%;
+    
+
 }
