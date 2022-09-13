@@ -40,7 +40,7 @@ CREATE TABLE `usuarios` (
 
 --
 -- Extraindo dados da tabela `usuarios`
---
+---------------
 
 INSERT INTO `usuarios` (`id`, `nome`, `apelido`, `endereco`, `email`, `telefone`, `assunto`, `mensagem`) VALUES
 (1, 'clesio santos', 'santos', 'Angola', 'cs0571275@gmail.com', '945356258', 'solicitação', 'wsfersdv'),

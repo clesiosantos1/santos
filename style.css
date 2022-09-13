@@ -262,3 +262,16 @@ transition: 1s;
 .text-center{
     margin-top: -20px;
 }
+.item
+{
+    color: #ffffff;
+    ;
+}
+.item :hover
+{
+    color: #222;
+    margin: auto;
+}
+.tem{
+    text-align: center;
+}

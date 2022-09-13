@@ -37,8 +37,23 @@
 
 
 #horas{
-    background-image: url('imgem/Design sem nome (2).png');
+    
 min-height: 38em;
     background-size: cover;
     width: 100%;
+}
+h1 {
+margin: 0 0 15px 0;
+text-transform: uppercase;
+text-align: left;
+background: none;
+font-family: 'Maven Pro', sans-serif;
+font-size: 71px;
+line-height: 86px;
+color: #343434;
+font-weight: 700;
+}
+h1{
+    margin: 30px;
+    font-size: 60px;
 }
