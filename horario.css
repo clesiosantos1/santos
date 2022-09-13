@@ -1,46 +1,27 @@
-#hora h1 {
+.horario h1, p {
     text-align: center;
-    height: 100px;
-    width: 100%;
-    padding: 15px;
-    color: white;
-    background-color: #4ABDAC;
     
 }
-.direita {
-    width: 50%;
-    float: right;
-    height: 100px;
-    padding: 5px;
+span {
     text-align: center;
 }
-.direita h3 {
-    padding: 20px;
-    text-align: center;
-    color: #32338e;
-    border-top: #32338e solid 1px;
-}
-.esquerda {
-    width: 50%;
-    float: right;
-    padding: 5px;
-    height: 100px;
-    text-align: center;
-    display: block;
-}
-.esquerda h3 {
-    padding: 20px;
-    text-align: center;
-    color: #32338e;
-    border-top: 1px solid #32338e ;
+.horario p {
+    font-size: 15pt;
+    
 }
 
 
+<<<<<<< HEAD
 #horas{
     
 min-height: 38em;
     background-size: cover;
+=======
+.btn{
+>>>>>>> a968a0d20c46b8dbd2fcf43e62d29d109347855d
     width: 100%;
+    
+
 }
 h1 {
 margin: 0 0 15px 0;
