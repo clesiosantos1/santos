@@ -7,4 +7,5 @@ $dbname = "lar-caridade";
 
 $conexao = mysqli_connect($servidor,$usuario,$senha,$dbname);
 
+
 ?>
