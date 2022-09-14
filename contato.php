@@ -90,9 +90,7 @@ if(isset($_POST['submit'])){
               <li class="nav-item">
                 <a class="nav-link active" id="texte" href="missa.html">MISSÃO</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" id="texte" href="horario.html" tabindex="-1" aria-disabled="true">HORÁRIO</a>
-              </li>
+             
               <li class="nav-item">
                 <a class="nav-link active" id="texte" href="portal.html" tabindex="-1" aria-disabled="true">PORTAL DE TRANSPARÊNCIA</a>
               </li>

@@ -32,7 +32,7 @@ session_start();
 		border-radius: 5px;
 		border: 1px solid white;
 		padding:40px;
-		background-color:#128CC1;
+		background: rgb(0,135,183);  
 	}
 	body{
 

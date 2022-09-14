@@ -1064,7 +1064,15 @@
             color: #fff;
             cursor: pointer;
         }
-   
+        .navbar-expand-lg {
+            background-color: rgb(255, 255, 255);
+          }
+          
+          .button.is-medium {
+            font-size: 1.25rem;
+            width: 100%;
+            color: white;
+          }
        
        
        

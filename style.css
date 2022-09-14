@@ -276,3 +276,56 @@ transition: 1s;
 .tem{
     text-align: center;
 }
+
+
+.navbar-expand-lg {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .button.is-medium {
+    font-size: 1.25rem;
+    width: 100%;
+    color: white;
+  }
+
+#nervo{
+  display: flex;
+align-items: center;
+  background-color: red;
+}
+
+
+.containerss{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.anco{
+  color: white;
+}
+.anco:hover{
+  color: black;
+}
+
+
+@media screen and (max-width: 678px) {
+    .containerss{
+      display: flex;
+   text-align: center;
+
+    }
+ 
+}
+
+
+.navbar-expand-lg {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .button.is-medium {
+    font-size: 1.25rem;
+    width: 100%;
+    color: white;
+  }
