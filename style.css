@@ -30,7 +30,7 @@ a, a:hover{
 }
 .top-bar span{
     color: #fff;
-}
+}   
 .top-bar ul{
     display: flex;
     list-style: none;
@@ -51,6 +51,7 @@ nav{
     align-items: center;
 }
 
+
 nav a{
     color: rgb(0, 0, 0);
 }
@@ -66,7 +67,7 @@ nav a{
 }
 
 nav a:hover{
-    color: #ef4b3f;
+    color: #000000;
 }
 .top-bar a:hover{
     color: #222;
@@ -199,7 +200,7 @@ h2{
  .clesio123{
 display: flex;
  justify-content: space-between;
- flex-wrap: wrap;
+text-align: center;
  padding: 20px;
 }
 .item2{
@@ -261,4 +262,17 @@ transition: 1s;
 
 .text-center{
     margin-top: -20px;
+}
+.item
+{
+    color: #ffffff;
+    ;
+}
+.item :hover
+{
+    color: #222;
+    margin: auto;
+}
+.tem{
+    text-align: center;
 }

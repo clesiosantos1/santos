@@ -6,19 +6,32 @@ include_once("config.php");
 
 session_start();
 if(!empty($_SESSION['id'])){
-	echo " Olá ".$_SESSION['nome'].", BEM VINDO <br>";
-	echo "<a class='vaist' href='sair.php'>Sair</a>";
+	echo "  Olá ".$_SESSION['nome'].", BEM VINDO <br>";
+	echo "<a class='vaist' href='sair.php'><svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-arrow-right-square' viewBox='0 0 16 16'>
+  <path fill-rule='evenodd' d='M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/>
+</svg></a>";
 }else{
 	$_SESSION['msg'] = "Área restrita";
 	header("Location: login.php");	
 }
 
-$sql = "SELECT * FROM usuarios123 ORDER BY id DESC";
+$sql = "SELECT  * FROM usuarios123 ORDER BY id DESC";
 
 $result = $conexao->query($sql);
 
 
+
+
+
+/* //////////////////////////////////////// */
+
+
+
+
+
 ?>
+
+
 
 </div>
 
@@ -35,6 +48,10 @@ $result = $conexao->query($sql);
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
 </head>
 
 <body>
@@ -59,64 +76,79 @@ $result = $conexao->query($sql);
   .vaist{
     color:white;
   }
+a{
+  color:white;
+  text-decoration: none;
+}
+a:hover{
+  color:white;
+}
 
+.tete{
+  color:white;
+  font-size:2em;
+}
 
+.reset{
+  display:flex;
+  justify-content:center;
+  padding: 2em;
+  margin:10px;
+  flex-wrap: wrap;
+}
+.card{
+ 
+  margin:10px;
+}
+
+.icone{
+  font-size: 4em;
+}
 </style>
 
-
-<div class="container">
-<table class="table ">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nome</th>
-      <th scope="col">Apelido</th>
-      <th scope="col">Endereco</th>
-      <th scope="col">E-mail</th>
-      <th scope="col">Telefone</th>
-      <th scope="col">Assunto</th>
-      <th scope="col">Mensagem</th>
-      <th scope="col">...</th>
-      <th scope="col">...</th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php
-    
-
-    while($user_data = mysqli_fetch_assoc($result)){
-      echo  "<tr>";
-
-      echo "<td>".$user_data['id']."</td>";
-      echo "<td>".$user_data['nome']."</td>";
-      echo "<td>".$user_data['apelido']."</td>";
-      echo "<td>".$user_data['endereco']."</td>";
-      echo "<td>".$user_data['email']."</td>";
-      echo "<td>".$user_data['telefone']."</td>";
-      echo "<td>".$user_data['assunto']."</td>";
-      echo "<td>".$user_data['mensagem']."</td>";
-      echo "<td><a class='btn btn-primary btn-sm' href='edit.php?id=$user_data[id]'> <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-pencil-square' viewBox='0 0 16 16'>
-      <path d='M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z'/>
-      <path fill-rule='evenodd' d='M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z'/>
-    </svg></a></td>";
-      echo "<td> <a class='btn btn-danger btn-sm' href=''>  <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-trash-fill' viewBox='0 0 16 16'>
-      <path d='M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z'/>
-    </svg></td>";
-    
-
-
-      echo "</tr>";
-    }
-    ?>
-  </tbody>
-</table>
+<a href="painel1.php" style="color:red;">
+<div class="reset">
+<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+  <div class="card-header"><div class="animate__animated animate__shakeX"><ion-icon class="icone" name="chatbox-outline"></ion-icon></div></div>
+  <div class="card-body">
+    <h5 class="card-title"><?php print_r(" Mensagem $result->num_rows");   ?></h5>
+    <p class="card-text"></p>
+  </div>
+</div>
+</a>
+<a href="painel1.php" style="color:red;">
+<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+  <div class="card-header">  <div class="animate__animated animate__shakeX"> <ion-icon class="icone" name="notifications-circle-outline"></ion-icon></div></div>
+  <div class="card-body">
+    <h5 class="card-title">Inscritos</h5>
+    <p class="card-text"></p>
+  </div>
+</div>
+</a>
+<a href="painel1.php" style="color:red;">
+<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+  <div class="card-header"><ion-icon class="icone" name="people-circle-outline"></ion-icon></div>
+  <div class="card-body">
+    <h5 class="card-title">Novo Cadastro</h5>
+    <p class="card-text"></p>
+  </div>
+</div>
+</a>
+<div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+  <div class="card-header"><ion-icon class="icone" name="heart-half-outline"></ion-icon></div>
+  <div class="card-body">
+    <h5 class="card-title">Doações</h5>
+    <p class="card-text"></p>
+  </div>
 </div>
 </div>
-
-
 
 </script>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
