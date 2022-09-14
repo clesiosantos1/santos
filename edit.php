@@ -27,7 +27,7 @@ if(!empty($_GET['id']))
         $assunto = $user_data['assunto'];
         $mensagem = $user_data['mensagem'];
      }
-
+ print_r($apelido);
   }
   else
   {
@@ -57,6 +57,12 @@ if(!empty($_GET['id']))
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<style>
+  .foi{
+   background-color:rgb(0,135,183);
+  margin:1em;
+}
+</style>
 </head>
 
 <body style="background-color:rgb(0,135,183);">
@@ -82,7 +88,7 @@ if(!empty($_GET['id']))
                 </div>
                 <div class="col-lg-12 col-md-8">
                   <div class="contact-form">
-                    <form class='form' id='contact-form' method='POST' action="contato.php" data-toggle='validator'>
+                    <form class='form' id='contact-form' method='POST' action="save.php" data-toggle='validator'>
                       <div class="messages"></div>
                       <div class="controls">
                         <div class="row">
@@ -128,25 +134,11 @@ if(!empty($_GET['id']))
                               <div class="help-block with-errors"></div>
                             </div>
                           </div>
-                
-                          </div>
-                          <!-- <div class="col-lg-12 form-group">
-                            <textarea id="form_message" name="mensagem" class="form-control" placeholder=" Coloque aqui a mensagem " rows="4" required data-error="Please,leave us a message." value="<?php echo $telefone ?>"></textarea>
-                            <div class="help-block with-errors"></div>
-                          </div> -->
-
-                          <style>
-                            .foi{
-                              background-color:rgb(0,135,183);
-                              margin:1em;
-
-                            }
-
-                            
-                          </style>
+                          </div>                      
                           <div class="col-lg-12 text-center">
                             <div class="foi">
-                                      <button class="btn btn-dark" name="submit">Salvar</button>
+                              <input  type="submit" class="btn btn-dark" name="submit" id="submit" value="Salvar" >
+                            <!--<button class="btn btn-dark" name="submit" id="submit">Salvar</button>-->
                             <button class="btn btn-danger"  name="submit" ><a style="text-decoraction:none; color:white;" href="administrativo.php">Sair</a></button>
                             </div>
                     

@@ -48,9 +48,15 @@ if(isset($_POST['submit'])){
     font-size: 1.25rem;
     width: 100%;
     color: white;
+
   }
+
   </style>
+  
 <body>
+
+
+
   <div class="top-bar" id="clesio34">
     <ul>
         <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
