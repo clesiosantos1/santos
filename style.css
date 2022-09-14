@@ -200,7 +200,7 @@ h2{
  .clesio123{
 display: flex;
  justify-content: space-between;
- flex-wrap: wrap;
+text-align: center;
  padding: 20px;
 }
 .item2{
