@@ -16,6 +16,13 @@
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Open+Sans:ital,wght@0,500;0,600;1,500&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Open+Sans:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 
@@ -36,7 +43,27 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   }
   </style>
 <body>
+  
   <div class="top-bar" id="clesio34">
+    <div id="relogio">
+      <div>
+     
+        <span id="horas">00</span>
+        <span class="tempo">:</span> 
+     
+     </div>
+     
+     <div>
+        <span id="minutos">00</span>
+        <span class="tempo">:</span> 
+     </div>
+     
+     <div>
+        <span id="segundos">00</span>
+        <span class="tempo"></span> 
+     </div>
+     </div>
+    
     <ul>
         <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
         <li><a href="https://www.google.com/search?q=twi&rlz=1C1GCEU_pt-BRAO965AO965&oq=twi&aqs=chrome..69i57j46i131i199i433i465i512j0i131i433i512j0i433i512j0i512l2j69i61l2.2672j0j7&sourceid=chrome&ie=UTF-8"><ion-icon name="logo-twitter"></ion-icon></a></li>
@@ -80,23 +107,33 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
           </div>
         </div>
       </nav>
-
-      <header>
-        <div id="horas">
+      <img src="img/nosso lar.png"width="100%">
+      <div class="container bs ">
         
+        
+        
+        <div class="prim">
+          <h3>Administração</h3>
+          <p>8:00 hs as 17:00 hs - de segunda a sexta.
+            8:00 hs as 12:00 hs - sábados.</p>
+          </div>
+        <hr>
+        <div>
 
-        </div>
-      </header>
+          <h3>Visitas a Instituição</h3>
 
-      <div class="horario">
-        <h1>HORÁRIO</h1>
-<p>Aberto de segunda a sexta feira</p>
-<p> Aberto Das 08h:00 as 16h:30</p>
-
-
-
-
+         <p> 14:30 hs as 16:30hs - diariamente.
+          Visitas em grupo ou para conhecer a Instituição, entrar em contato antecipadamente pelo telefone: 3876-1361.</p>
       </div>
+      <hr>
+  
+        <div class="main">
+          <h3>Bazar</h3>
+        <p>Duas vezes por mês todas as 2ª e 4ª quintas feiras/mês dás 8:00 as 16:00hs.
+          Local: Rua: João Corazzari, 391 - Centro - Vinhedo.</p></div>
+          
+      </div>
+   
 
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" >AGENDAR VISITAS</button>
       
@@ -118,9 +155,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                   <label for="message-text" class="col-form-label">Mensagem</label>
                   <textarea class="form-control" id="message-text"></textarea>
                 </div>
-              </form>
-            </div>
-            <div class="modal-footer">
+                </form>
+                </div>
+             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sair</button>
               <button type="button" class="btn btn-primary">Enviar</button>
             </div>
@@ -132,14 +169,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     <iframe class="mt-5" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15767.223134772821!2d13.185581449999997!3d-8.89764095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sao!4v1662642724832!5m2!1spt-BR!2sao" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
    
+<!--footer-->
 
 
-   
-
-
-       <!--footer-->
-
-      <!-- Footer -->
 <footer class="text-center text-lg-start  text-muted" style="background-color:#328CC1;">
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -251,30 +283,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 </footer>
 <!-- Footer -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
+</script>
     <!-- JavaScript Bundle with Popper -->
-
-
-
-
-
-
-
+    <script src="relogio.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
