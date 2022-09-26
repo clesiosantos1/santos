@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="vai.css">
 <link rel="stylesheet" href="bulma.min.css">
+<link rel="stylesheet" href="tabela.css">
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -18,40 +19,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Open+Sans:ital,wght@0,500;0,600;1,500&family=Yellowtail&display=swap" rel="stylesheet">
 </head>
 <style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-  }
-  
-  #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background: rgb(8, 98, 130);    
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 4px;
-  }
-  
-  #myBtn:hover {
-    background-color: rgb(241, 28, 28);
-  }
+ 
+
   </style>
 <body>
 
-
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+<!--botao subir-->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
     <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-  </svg></button>
+</svg></button>
 
 
-  
 <script>
   // Get the button
   let mybutton = document.getElementById("myBtn");
@@ -108,19 +86,19 @@
           <a class="nav-link active" id="texte" aria-current="page" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
             <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-          </svg> LAR DE CARIDADE</a>
+          </svg> Lar de caridade</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" id="texte" href="quem.html">QUEM SOMOS</a>
+          <a class="nav-link active" id="texte" href="quem.html">Quem Somos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" id="texte" href="missa.html">MISSÃO</a>
+          <a class="nav-link active" id="texte" href="missa.html">Missão</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" id="texte" href="portal.html" tabindex="-1" aria-disabled="true">PORTAL DE TRANSPARÊNCIA</a>
+          <a class="nav-link active" id="texte" href="portal.html" tabindex="-1" aria-disabled="true">Portal de Transparência</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" id="texte" href="contato.php" tabindex="-1" aria-disabled="true">CONTACTO</a>
+          <a class="nav-link active" id="texte" href="contato.php" tabindex="-1" aria-disabled="true">Contacto</a>
         </li>
       </ul>
     </div>  
@@ -145,7 +123,7 @@
             <img src="img/MicrosoftTeams-image (5).png" id="image1"    class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">    
          <div class="animate__animated animate__backInLeft">
-              <h3>Amor ao Próximo</h3>
+              <h2>Amor ao Próximo</h3>
             </div>
               <p class="outro">Junte-se a Nós.</p>
             </div>
@@ -153,14 +131,14 @@
           <div class="carousel-item">
             <img src="img/MicrosoftTeams-image (6).png"   class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Praticando o Gesto do Amor <i class="fas fa-arrow-alt-from-right    "></i></h5>
+              <h2>Praticando o Gesto do Amor <i class="fas fa-arrow-alt-from-right    "></i></h5>
               <p class="outro">Fazer o Bem faz bem.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="img/MicrosoftTeams-image (6).png"   class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Praticando o Gesto do Amor </h5>
+              <h2>Praticando o Gesto do Amor </h5>
               <p class="outro">Fazer o Bem Faz bem!</p>
             </div>
           </div>
@@ -201,12 +179,18 @@
   </div>
 </div>
 
+
+
+
+
+
+
 <div class="services section-padding bg-grey" data-scroll-index='2'>
   <div class="container">
     <div class="row">
       <div class="col-md-12 section-title text-center">
         <h3>GALERIA</h3>
-        <p>Vestibulum elementum dui tempus dolor gravida, vel mattis erat fermentum.</p>
+        <p></p>
         <span class="section-title-line"></span> </div>
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
         <div class="service-box bg-white text-center">
@@ -306,12 +290,13 @@
 
 
 
-<div>
+<!--<div>
   <h1 class="top-bar clesio">CONTACTO</h1>
-</div>
+</div>--> 
 
 
 <!--falta-->
+<!-- End Contact 
 <div class="contact section-padding" data-scroll-index='4'>
   <div class="container">
     <div class="row">
@@ -381,9 +366,56 @@
       </div>
     </div>
   </div>
-</div>
-<!-- End Contact -->
+</div>-->
 
+
+
+
+
+<!--tabela-->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Actividades</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Alimentação</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Vestuário</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>Atividades Reacreativas</h1><br>
+  <p>Essas atividades são realizadas pela Coordenação e Assistente Social , independente de trabalho de Terapia Ocupacional . São realizadas 12 festas de aniversário por ano , sendo uma por mês , organizadas por grupos diversos da comunidade , que fazem parte de um calendário .</p>
+  <p>São realizadas festas em datas especiais : Natal , Ano Novo , Páscoa , Dia das Mães , Dia dos Pais , Festa Junina , etc. Além de duas excursões por ano em locais escolhidos pelos moradores .</p>
+  <div> <a href="">Ver mais</a></div>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Alimentação</h3><br>
+  <p>O sistema de alimentação é auto gestão , Balanceada por nutricionista que faz avaliação geral de todos (peso , idade , sexo e patologia), respeitando as condições econômicas do local e utilizando sempre alimentos abrandados ou pastosos de acordo com a necessidade . São feitas também as dietas especiais para os que tem diabetes, gastrites, úlcera, hipertensão, etc.
+    São servidas 6 refeições diárias : café da manhã – almoço – café da tarde – colação – jantar – ceia.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Vestuário e Lavandaria</h3>
+  <p>A entidade fornece todo o vestuário como : lençóis , colchas , cobertores , travesseiros , toalhas de banho , rosto e de mesa , fraldas geriátricas, roupas pessoais , inclusive calçados para os mais desprovidos.
+    A lavanderia é industrial e realiza todo o serviço como : lavagem de roupas de cama, mesa, banho e as de uso pessoal dos idosos , com um gasto médio mensal de 70 kg de sabão em pó , 20 litros de desinfetantes apropriados , mais amaciantes , alvejantes , etc...</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 
 
