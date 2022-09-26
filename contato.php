@@ -36,6 +36,10 @@ if(isset($_POST['submit'])){
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <style>
   
@@ -105,7 +109,10 @@ if(isset($_POST['submit'])){
 
            <!--banner-->
            <div id="treino">
-            <div class="item3"><h1>Fale Connosco</h1></div>
+            <div class="item3">
+             
+             <h1>Fale Conosco</h1> 
+          </div>
        
           </div>
 
@@ -126,7 +133,9 @@ if(isset($_POST['submit'])){
                       <div class="icon"> <i class="fas fa-phone"></i> </div>
                       <div class="content">
                         <h4>Telefone</h4>
-                        <p>927152537</p>
+                        <p>+224 927152537<br>
+                       +244 931643911
+                        </p>
                       </div>
                     </div>
                     <div class="info-box">
