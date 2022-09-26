@@ -36,6 +36,10 @@ if(isset($_POST['submit'])){
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <style>
   
@@ -105,7 +109,11 @@ if(isset($_POST['submit'])){
 
            <!--banner-->
            <div id="treino">
-            <div class="item3"><h1>Fale Connosco</h1></div>
+            <div class="item3">
+             
+              <p class="animate__animated animate__bounce animate__arubberBand">Fazer parte das comunidades onde operamos significa muito para nós. Temos consciência de que precisamos ter uma participação no ambiente social e comunitário porque somos parte integrante dele e, portanto, dependemos também do seu correto funcionamento. Temos muito carinho em devolver para a comunidade angolana, seja em forma de doações ou levando um pouco de amor e alegria, toda a confiança que depositam em nós escolhendo a Dinda como a marca de preferência de suas famílias! Uma das entidade que escolhemos para receber nossas doações foi o Lar de Caridade. 
+              </p>
+          </div>
        
           </div>
 
@@ -126,7 +134,9 @@ if(isset($_POST['submit'])){
                       <div class="icon"> <i class="fas fa-phone"></i> </div>
                       <div class="content">
                         <h4>Telefone</h4>
-                        <p>927152537</p>
+                        <p>+224 927152537<br>
+                       +244 931643911
+                        </p>
                       </div>
                     </div>
                     <div class="info-box">
