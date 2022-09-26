@@ -111,8 +111,7 @@ if(isset($_POST['submit'])){
            <div id="treino">
             <div class="item3">
              
-              <p class="animate__animated animate__bounce animate__arubberBand">Fazer parte das comunidades onde operamos significa muito para nós. Temos consciência de que precisamos ter uma participação no ambiente social e comunitário porque somos parte integrante dele e, portanto, dependemos também do seu correto funcionamento. Temos muito carinho em devolver para a comunidade angolana, seja em forma de doações ou levando um pouco de amor e alegria, toda a confiança que depositam em nós escolhendo a Dinda como a marca de preferência de suas famílias! Uma das entidade que escolhemos para receber nossas doações foi o Lar de Caridade. 
-              </p>
+             <h1>Fale Conosco</h1> 
           </div>
        
           </div>
