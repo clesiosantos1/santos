@@ -101,7 +101,8 @@ h2 {
     font-weight: lighter;
     margin: 20px 0;
     padding: 0 10px;
-    text-align: center
+    text-align: center;
+  
 }
 
 p {
@@ -110,6 +111,7 @@ p {
     margin: 20px 0;
     padding: 0 10px;
     text-align: justify;
+    text-align: center;
 }
 
 .menu-resp {
