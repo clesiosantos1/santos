@@ -7,7 +7,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -308,6 +308,32 @@ align-items: center;
 .anco:hover{
   color: black;
 }
+#imagevelho {
+    background: url(../santos/imgem/velllll.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px ;
+    padding: 5px;
+    box-shadow: 3px 3px 3px 2px #888888;
+    border-radius: 4px;
+   
+}
+#imagevelho:hover {
+    opacity: 0.5;
+    transition: 3s;
+}
+#larCaridade h2 {
+    background: rgb(0,135,183); 
+    box-shadow: 4px 3px 2px 1px #888888;
+    padding: 5px;
+    
+}
+.spinner-border {
+    float: right;
+    
+}
+
+
 
 
 @media screen and (max-width: 678px) {
