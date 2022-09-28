@@ -543,3 +543,8 @@ h6 {
 #icon2{
 	width: 12.5rem;
 }
+
+
+.navbar-expand-lg{
+	min-height: 8em;
+   }
