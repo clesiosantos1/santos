@@ -19,7 +19,7 @@ if(isset($_POST['submit'])){
 
 ?>
 
-
+<h1>ola News</h1>
 
 <!DOCTYPE html>
 <html lang="en">
