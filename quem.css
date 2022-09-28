@@ -605,6 +605,7 @@
         .mapa img {
             display: none;
         }
+
         
         @media only screen and (max-width:1200px) {
             * {
@@ -1065,7 +1066,7 @@
             cursor: pointer;
         }
         .navbar-expand-lg {
-            background-color: rgb(255, 255, 255);
+            height: 20em;
           }
           
           .button.is-medium {
