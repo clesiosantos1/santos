@@ -46,6 +46,7 @@ if(isset($_POST['submit'])){
 
   .navbar-expand-lg {
     background-color: rgb(255, 255, 255);
+    min-height:8em;  
   }
   
   .button.is-medium {
