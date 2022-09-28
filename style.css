@@ -1,3 +1,11 @@
+:root{
+    --branco-principal:#ffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;  
+    --cor-de-fundo: #000030;   
+    --fonte-principal: 'inter';
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -251,13 +259,14 @@ transition: 1s;
 }
 
 
-
+/* imagem de fundo do portal de trasnparencia */
 .velho{
-    background-image: url(img/Banner\ para\ site\ dia\ dos\ pais\ verde\ e\ preto.png);
+    background-image: url(imgem/86e6bab6-c7f6-4840-b645-5db2b8a9f9eb-1.jpg);
     min-height: 30em;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    opacity: 0.2px;
 }
 
 .text-center{
