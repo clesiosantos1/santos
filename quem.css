@@ -1065,10 +1065,7 @@
             color: #fff;
             cursor: pointer;
         }
-        .navbar-expand-lg {
-            height: 8em;
-          }
-          
+    
           .button.is-medium {
             font-size: 1.25rem;
             width: 100%;
